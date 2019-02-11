@@ -1,12 +1,31 @@
-﻿<!DOCTYPE html>
+﻿
 <html>
 <head>
-    <meta charset="utf-8" />
+    <title>Event!!!</title>
+   
     <title>C0749303_Navneet_Singh_CSD2214_6_WEEK06</title>
     <link href="css/default.css" rel="stylesheet" />
-</head>
-<body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+    <script src="js/main.js">
+        function trigger() {
+            document.getElementById("hover").addEventListener("mouseover", popup);
+            function popup() {
+                alert("Welcome to my WebPage!!!")
+
+            }
+        }
+    </script>
+    <style>
+        p
+        {
+            font-size:50px;
+            position:fixed;
+            left:550px;
+            top:300px;
+
+        }
+    </style>
+    </head>
+<body onload="trigger();">
+    <p id="hover">Welcome!!!</p>
 </body>
 </html>
